@@ -1,0 +1,27 @@
+HOST: http://www.google.com/
+
+--- My Restful Sample ---
+
+---
+Welcome to the our sample API documentation. All comments can be written in (support [Markdown](http://daringfireball.net/projects/markdown/syntax) syntax)
+---
+
+--
+Hello call
+This is how you call the hello api
+--
+
+List products added into your shopping-cart. (comment block again in Markdown)
+GET /
+< 200
+< Content-Type: application/json
+Hello
+
+
+-- Payment Resources --
+
+This resource allows you to submit payment information to process your *shopping cart* items
+POST /payment
+{ "cc": "12345678900", "cvc": "123", "expiry": "0112" }
+< 200
+{ "receipt": "/payment/receipt/1" }
