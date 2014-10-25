@@ -15,6 +15,25 @@ List products added into your shopping-cart. (comment block again in Markdown)
 GET /user/{id}
 < 200
 < Content-Type: application/json
-{"message": "Hello World"}
+{
+   "payload":{
+      "id": "id"
+   },
+   "errors":[
+      {
+         "field":"email",
+         "error_code":1595,
+         "default_message":"Value already taken"
+      },
+      {
+         "field":"password",
+         "error_code":2932,
+         "default_message":"Value cannot be blank"
+      }
+   ],
+   "response_id":"52de9bb7-b0b4-48cc-92c7-4d5f884d00d5",
+   "documentation":"http://www.awesomedoc.com/errors"
+}
+
 
 
